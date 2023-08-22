@@ -16,7 +16,7 @@ module.exports = (sequelize) => {
             type: DataTypes.FLOAT,
             allowNull: false
         },
-        descripion:{
+        description:{
             type: DataTypes.TEXT,
             allowNull: false
         },

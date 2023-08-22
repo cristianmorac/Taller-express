@@ -48,7 +48,9 @@ console.log(sequelize.models);
 const { Product, Category } = sequelize.models;
 
 /* Realizar las relaciones */
-
+// uno a muchos A = category B = Product
+Category.hasMany(Product)
+Product.belongsTo(Category)
 
 module.exports = {
     sequelize, ...sequelize.models
